@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Composite")]
-public class CompositeBehavior : FlockBehaviour
+public class CompositeBehavior : FlockBehavior
 {
 
-    public FlockBehaviour[] behaviors;
+    public FlockBehavior[] behaviors;
     public float[] weights;
     public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
     {

@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Flock/Behavior/Cohesion")]
-public class CohesionBehavior : FlockBehavior
+[CreateAssetMenu(menuName = "Flock/Behavior/Steered Cohesion")]
+public class SteeredCohesionBehavior : FlockBehavior
 {
+
+    Vector2 currentVelocity;
+    public float agentSmoothTime = 0.5f;
+
     public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
     {
         //si no hay vecinos, devuelve 0 ajustes
@@ -22,6 +26,7 @@ public class CohesionBehavior : FlockBehavior
 
         //crear offset desde la posicion actual
         cohesionMove -= (Vector2)agent.transform.position;
+        cohesionMove = Vector2.SmoothDamp(agent.transform.up, cohesionMove, ref currentVelocity, agentSmoothTime);
         return cohesionMove;
     }
 
