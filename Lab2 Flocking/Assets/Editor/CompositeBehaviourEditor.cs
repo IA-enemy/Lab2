@@ -8,12 +8,13 @@ public class CompositeBehaviorEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        //setup
         CompositeBehavior cb = (CompositeBehavior)target;
 
         Rect r = EditorGUILayout.BeginHorizontal();
         r.height = EditorGUIUtility.singleLineHeight;
 
-        //Revisa si hay comportamientos
+        //check for behaviors
         if (cb.behaviors == null || cb.behaviors.Length == 0)
         {
             EditorGUILayout.HelpBox("No behaviors in array.", MessageType.Warning);
