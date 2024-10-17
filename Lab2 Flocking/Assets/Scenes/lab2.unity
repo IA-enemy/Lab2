@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5e3540cd77cdc47adbc4cf174177eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentPrefab: {fileID: 7345510511745661998, guid: e580fc1829e18f248b6e3b82cfbd30b2, type: 3}
+  agentPrefab: {fileID: 8278587239187432429, guid: 0e3282e5a9df725448ef2035042bbb4c, type: 3}
   behaviour: {fileID: 11400000, guid: 57240c3a6fb77cc48910752df165a776, type: 2}
   startingCount: 100
   driveFactor: 10
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5e3540cd77cdc47adbc4cf174177eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentPrefab: {fileID: 7345510511745661998, guid: 466dde4c64c9c4a4387de4f40ae86d1c, type: 3}
+  agentPrefab: {fileID: 8534704253092819930, guid: 0ad9aedd78869ba438b55d184a3e9235, type: 3}
   behaviour: {fileID: 11400000, guid: 57240c3a6fb77cc48910752df165a776, type: 2}
   startingCount: 100
   driveFactor: 10
