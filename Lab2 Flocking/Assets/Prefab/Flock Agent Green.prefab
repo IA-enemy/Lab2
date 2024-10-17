@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8079243692167351914}
   - component: {fileID: 3664671481948537765}
-  - component: {fileID: 7345510511745661998}
+  - component: {fileID: 8132852167602944380}
   m_Layer: 0
   m_Name: Flock Agent Green
   m_TagString: Untagged
@@ -153,7 +153,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.32
---- !u!114 &7345510511745661998
+--- !u!114 &8132852167602944380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,6 +162,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8027979470542502718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c395c10a8ddbbf4c824940ca5bc8a5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 08b2bb6edace52e48877f34aed4e2874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDirection: {x: 0, y: 0}
+  speed: 5

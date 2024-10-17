@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1939737353064694251
+--- !u!1 &4876039955550235055
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6132336191342739229}
-  - component: {fileID: 5245769262962135730}
-  - component: {fileID: 8278587239187432429}
+  - component: {fileID: 1080256776443683957}
+  - component: {fileID: 646158333395762868}
+  - component: {fileID: -2734196790703008212}
+  - component: {fileID: -5348342058314304452}
   m_Layer: 0
-  m_Name: Flock Agent Red 1
+  m_Name: leader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6132336191342739229
+--- !u!4 &1080256776443683957
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939737353064694251}
+  m_GameObject: {fileID: 4876039955550235055}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7773033503723273332}
+  - {fileID: 9203814224246081240}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5245769262962135730
+--- !u!58 &646158333395762868
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939737353064694251}
+  m_GameObject: {fileID: 4876039955550235055}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -68,21 +69,35 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.16
---- !u!114 &8278587239187432429
+  m_Radius: 0.22
+--- !u!114 &-2734196790703008212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939737353064694251}
+  m_GameObject: {fileID: 4876039955550235055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b2bb6edace52e48877f34aed4e2874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementDirection: {x: 0, y: 0}
+  speed: 5
+--- !u!114 &-5348342058314304452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4876039955550235055}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c395c10a8ddbbf4c824940ca5bc8a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentLeader: {fileID: 0}
---- !u!1 &6665966198230654224
+--- !u!1 &5338313008501603230
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,37 +105,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7773033503723273332}
-  - component: {fileID: 2182494660042911120}
+  - component: {fileID: 9203814224246081240}
+  - component: {fileID: 571855131662917918}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: flock_agent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7773033503723273332
+--- !u!4 &9203814224246081240
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6665966198230654224}
+  m_GameObject: {fileID: 5338313008501603230}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0006, y: 0.0104, z: -0.0241}
-  m_LocalScale: {x: 0.104933225, y: 0.104933225, z: 0.104933225}
+  m_LocalPosition: {x: 0.002, y: 0.005, z: 0}
+  m_LocalScale: {x: 0.14425871, y: 0.14425871, z: 0.14425871}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6132336191342739229}
+  m_Father: {fileID: 1080256776443683957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2182494660042911120
+--- !u!212 &571855131662917918
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6665966198230654224}
+  m_GameObject: {fileID: 5338313008501603230}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -156,7 +171,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: df2689bfabe82b642b38707632ddeef1, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

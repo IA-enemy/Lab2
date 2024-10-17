@@ -10,6 +10,8 @@ public class FlockAgent : MonoBehaviour
 
     Collider2D agentCollider;
     public Collider2D AgentCollider { get { return agentCollider; } }
+
+    public FlockLeader currentLeader;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +28,9 @@ public class FlockAgent : MonoBehaviour
     public void Initialize(Flock flock)
     {
         agentFlock = flock;
+    }
+    public void UpdateLeader(FlockLeader newLeader)
+    {
+        currentLeader = newLeader;
     }
 }

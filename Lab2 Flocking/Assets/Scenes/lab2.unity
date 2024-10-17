@@ -122,57 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &53797693
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 53797695}
-  - component: {fileID: 53797694}
-  m_Layer: 0
-  m_Name: Flock_Red
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &53797694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53797693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b5e3540cd77cdc47adbc4cf174177eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentPrefab: {fileID: 8278587239187432429, guid: 0e3282e5a9df725448ef2035042bbb4c, type: 3}
-  behaviour: {fileID: 11400000, guid: 57240c3a6fb77cc48910752df165a776, type: 2}
-  startingCount: 100
-  driveFactor: 10
-  maxSpeed: 5
-  neighbourRadius: 1.5
-  avoidanceRadiusMultiplier: 0.5
---- !u!4 &53797695
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53797693}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08708413, y: 0.19557247, z: 0.079306275}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &541905109
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,8 +289,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 8534704253092819930, guid: 0ad9aedd78869ba438b55d184a3e9235, type: 3}
+  leaderPrefab: {fileID: -2734196790703008212, guid: 1ba16360b288a814abb22cfef9985eda, type: 3}
   behaviour: {fileID: 11400000, guid: 57240c3a6fb77cc48910752df165a776, type: 2}
-  startingCount: 100
+  startingCount: 78
+  leaderCount: 3
   driveFactor: 10
   maxSpeed: 5
   neighbourRadius: 1.5
@@ -367,4 +318,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 541905113}
   - {fileID: 1874923157}
-  - {fileID: 53797695}
